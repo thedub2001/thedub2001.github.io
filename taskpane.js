@@ -1,8 +1,11 @@
 Office.onReady((info) => {
   if (info.host === Office.HostType.Excel) {
     console.log("Office.js is ready.");
-    
+
+    // Vérifier si le DOM est chargé
     document.addEventListener("DOMContentLoaded", () => {
+      console.log("DOM fully loaded.");
+
       const button = document.getElementById("createSheet");
       if (button) {
         console.log("Button found. Adding event listener.");
