@@ -1,3 +1,5 @@
+console.log("Début");
+
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM fully loaded and parsed.");
   const button = document.getElementById("createSheet");
